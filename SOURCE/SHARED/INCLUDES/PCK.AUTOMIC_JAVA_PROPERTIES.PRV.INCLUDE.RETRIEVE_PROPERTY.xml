@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="11.0.0-sprint.20141111.1610+build.2828">
+<JOBI name="PCK.AUTOMIC_JAVA_PROPERTIES.PRV.INCLUDE.RETRIEVE_PROPERTY">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.AUTOMIC_ARATOOLS.PUB.INCLUDE.ATTACH
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
+:SET &CMD# = ""
+:IF &UC4RB_SET_ENCODING_CMD# <> ""
+:  SET &CMD# = ' -enc &UC4RB_SET_ENCODING_CMD#'
+:ENDIF
+:IF &UC4RB_JAVA_PROP_NAME# <> ""
+  java -jar "&$AGENT_RESOURCES_CLIENT#/ARATools.jar" properties RetrieveProperty -prop "&UC4RB_JAVA_PROP_FILENAME#" -var "&UC4RB_JAVA_PROP_NAME#" "&CMD#"
+:ELSE
+  java -jar "&$AGENT_RESOURCES_CLIENT#/ARATools.jar" properties RetrieveProperty -prop "&UC4RB_JAVA_PROP_FILENAME#" "&CMD#"
+:ENDIF]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>

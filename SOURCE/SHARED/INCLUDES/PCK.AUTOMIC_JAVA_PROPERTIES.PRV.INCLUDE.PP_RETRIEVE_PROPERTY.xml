@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="11.0.0-sprint.20141111.1610+build.2828">
+<JOBI name="PCK.AUTOMIC_JAVA_PROPERTIES.PRV.INCLUDE.PP_RETRIEVE_PROPERTY">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:SET &variableName# = "UC4_RV.FC_TEXT.PROPERTY_ENTRY_&$ACTIVATOR_RUNID#"
+:SET &variablePath# = "INTERNAL/RUNBOOK/FILE/FILE_CONTENT_MANIPULATION/JAVA_PROPERTIES/VARIABLE"
+:IF &UC4RB_JAVA_PROP_NAME# = ""
+:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CREATE_PASS_VALUES_VARIABLE
+:ENDIF
+
+:SET &result# = ""
+
+:SET &hnd# = PREP_PROCESS_REPORT(,,,"*")
+:PROCESS &hnd#
+:   SET &line# = GET_PROCESS_LINE(&hnd#,1)
+:   SET &line# = STR_TRIM(&line#)
+:   SET &pos# = STR_FIND(&line#,"Properties-Result: ")
+
+:   IF &pos# > 0
+:     SET &pos# = &pos#  + 19
+:     SET &line# = MID(&line#,&pos#)
+:     SET &result# = STR_TRIM(&line#)
+:     SET &len# = STR_LENGTH(&result#)
+
+:     IF &UC4RB_JAVA_PROP_NAME# = ""
+:        SET &keyPos# = STR_FIND(&result#, "=")
+:        IF &keyPos# > 0
+:           SET &keyPos# = &keyPos# - 1
+:           SET &keyLine# = MID(&result#,1,&keyPos#)
+:           SET &key# = STR_TRIM(&keyLine#)
+
+:           SET &keyPos# = &keyPos# + 2
+:           IF &keyPos# > &len#
+:              SET &value# = ""
+:             ELSE
+:              SET &valueLine# = MID(&result#,&keyPos#)
+:              SET &value# = STR_TRIM(&valueLine#)
+:           ENDIF
+:           PUT_VAR &variableName#, "&key#", "&value#"
+:        ENDIF
+:     ENDIF
+:   ENDIF
+:ENDPROCESS
+
+:IF &UC4RB_JAVA_PROP_NAME# <> ""
+:  PSET &UC4RB_OUT_VALUE# = &result#
+:ELSE
+:  PSET &UC4RB_OUT_ALL_VARS# = &variableName#
+:ENDIF]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
