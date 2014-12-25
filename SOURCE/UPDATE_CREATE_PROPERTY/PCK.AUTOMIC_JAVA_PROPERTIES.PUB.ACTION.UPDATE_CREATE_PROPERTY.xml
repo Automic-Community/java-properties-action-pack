@@ -2,7 +2,7 @@
 <uc-export clientvers="11.0.0-sprint.20141111.1610+build.2828">
 <JOBP AllowExternal="1" name="PCK.AUTOMIC_JAVA_PROPERTIES.PUB.ACTION.UPDATE_CREATE_PROPERTY">
 <XHEADER state="1">
-<Title/>
+<Title>Java Properties Set</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
