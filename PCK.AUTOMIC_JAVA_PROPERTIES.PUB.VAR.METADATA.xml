@@ -29,7 +29,7 @@
 <row Name="Company" Value="Automic Software GmbH" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Dependencies" Value="PCK.ITPA_SHARED &gt;= 0.0.1,PCK.AUTOMIC_ARATOOLS &gt;= 0.1.0" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Description" Value="" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Homepage" Value="" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Homepage" Value="http://www.automic.com" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="License" Value="" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Name" Value="PCK.AUTOMIC_JAVA_PROPERTIES" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Title" Value="Automic Java Properties" Value1="" Value2="" Value3="" Value4=""/>
