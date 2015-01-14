@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-15"?>
-<uc-export clientvers="11.0.0-sprint.20141111.1610+build.2828">
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <VARA OVD_VRName="FREI" data_type="STATIC" name="PCK.AUTOMIC_JAVA_PROPERTIES.PUB.VAR.METADATA" replacementmode="2">
 <HEADER state="1">
 <Title/>
@@ -25,19 +24,20 @@
 </ATTR_VARA>
 <VARA state="1">
 <Variables>
-<row Name="Categories" Value="" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Categories" Value="Java Properties" Value1="File manipulation" Value2="" Value3="" Value4=""/>
 <row Name="Company" Value="Automic Software GmbH" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Dependencies" Value="PCK.ITPA_SHARED &gt;= 0.0.1,PCK.AUTOMIC_ARATOOLS &gt;= 0.1.0" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Description" Value="" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Dependencies" Value="PCK.ITPA_SHARED &gt;= 1.0.0,PCK.AUTOMIC_ARATOOLS &gt;= 1.0.0" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Description" Value="Manipulate variables in a Java properties file." Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Homepage" Value="http://www.automic.com" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="License" Value="" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Name" Value="PCK.AUTOMIC_JAVA_PROPERTIES" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Package Format Version" Value="0.1.0" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Title" Value="Automic Java Properties" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Version" Value="1.0.0" Value1="" Value2="" Value3="" Value4=""/>
 </Variables>
 </VARA>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[These actions manipulate variables in a java .properties file.]]></DOC>
 </DOCU_Docu>
 </VARA>
 </uc-export>
