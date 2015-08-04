@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation     NOTE:
+...               add note here
+Suite Setup       Suite Setup
+Force Tags        UPDATE_CREATE_PROPERTY    win    unix
+Test Template     Update Already Exist Create Property Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    FILE                 PROPERTY       VALUE       RETURN CODE    RETURN STATUS
+Create Already Exist
+                      config.properties    newvariable    newvalue    0              ${ENDED_OK - ended normally}
+
+*** Keywords ***
+Suite Setup
+    Init AE And Package
+    Init File Server
+
+Update Already Exist Create Property Template
+    [Arguments]    ${file}    ${property}    ${value}    ${returnCode}    ${returnStatus}
+    Init Action    ${ACTION_UPDATE_CREATE_PROPERTY}
+    Action Set    ${PRT_UPDATE_CREATE_PROPERTY_JAVA_PROP_FILENAME}    ${_WORKING_DIR}${/}${file}
+    Action Set    ${PRT_UPDATE_CREATE_PROPERTY_JAVA_PROP_NAME}    ${property}
+    Action Set    ${PRT_UPDATE_CREATE_PROPERTY_JAVA_PROP_VALUE}    ${value}
+    Action Execute
+    Init Action    ${ACTION_UPDATE_CREATE_PROPERTY}
+    Action Set    ${PRT_UPDATE_CREATE_PROPERTY_JAVA_PROP_FILENAME}    ${_WORKING_DIR}${/}${file}
+    Action Set    ${PRT_UPDATE_CREATE_PROPERTY_JAVA_PROP_NAME}    ${property}
+    Action Set    ${PRT_UPDATE_CREATE_PROPERTY_JAVA_PROP_VALUE}    ${value}
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
