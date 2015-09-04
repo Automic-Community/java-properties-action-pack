@@ -7,5 +7,5 @@ binaries:
     resources: 
       - name: JAVAPROPERTIES.JAR
         type: BINARY
-        path: tools/jdbc-tool/target/java-properties-tool.jar
+        path: tools/java-properties-tool/target/java-properties-tool.jar
         version: 1.0.0
