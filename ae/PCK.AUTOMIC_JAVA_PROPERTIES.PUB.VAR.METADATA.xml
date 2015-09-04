@@ -26,7 +26,7 @@
 <Variables>
 <row Name="Categories" Value="Java Properties, File manipulation" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Company" Value="Automic Software GmbH" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="Dependencies" Value="PCK.ITPA_SHARED &gt;= 1.0.0,PCK.AUTOMIC_ARATOOLS &gt;= 1.0.0" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Dependencies" Value="PCK.ITPA_SHARED &gt;= 1.0.0" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Description" Value="Manipulate variables in a Java properties file." Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Homepage" Value="http://www.automic.com" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="License" Value="" Value1="" Value2="" Value3="" Value4=""/>

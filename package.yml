@@ -1,2 +1,11 @@
 name: PCK.AUTOMIC_JAVA_PROPERTIES
 source: ae
+
+binaries:
+  
+  - object: RESOURCES/LIBS/PCK.AUTOMIC_JAVA_PROPERTIES.PRV.STORE
+    resources: 
+      - name: JAVAPROPERTIES.JAR
+        type: BINARY
+        path: tools/jdbc-tool/target/java-properties-tool.jar
+        version: 1.0.0

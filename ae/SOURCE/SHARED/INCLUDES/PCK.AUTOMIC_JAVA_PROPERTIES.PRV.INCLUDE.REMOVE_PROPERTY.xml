@@ -7,12 +7,12 @@
 <OH_SubType/>
 </HEADER>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[!:INCLUDE PCK.AUTOMIC_ARATOOLS.PUB.INCLUDE.ATTACH
+<MSCRI><![CDATA[!:INCLUDE PCK.AUTOMIC_JAVA_PROPERTIES.PUB.INCLUDE.ATTACH
 :INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
 :IF &UC4RB_XML_ENCODING# <> ""
-java -jar "&$AGENT_RESOURCES_CLIENT#/ARATools.jar" properties RemoveProperty -prop "&UC4RB_JAVA_PROP_FILENAME#" -var "&UC4RB_JAVA_PROP_NAME#" -enc "&UC4RB_SET_ENCODING_CMD#"
+java -jar "&$AGENT_RESOURCES_CLIENT#java-properties-tool.jar" properties RemoveProperty -prop "&UC4RB_JAVA_PROP_FILENAME#" -var "&UC4RB_JAVA_PROP_NAME#" -enc "&UC4RB_SET_ENCODING_CMD#"
 :ELSE
-java -jar "&$AGENT_RESOURCES_CLIENT#/ARATools.jar" properties RemoveProperty -prop "&UC4RB_JAVA_PROP_FILENAME#" -var "&UC4RB_JAVA_PROP_NAME#"
+java -jar "&$AGENT_RESOURCES_CLIENT#java-properties-tool.jar" properties RemoveProperty -prop "&UC4RB_JAVA_PROP_FILENAME#" -var "&UC4RB_JAVA_PROP_NAME#"
 :ENDIF]]></MSCRI>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
