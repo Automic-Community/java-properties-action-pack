@@ -8,6 +8,10 @@
 </HEADER>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[Contains actions to manipulate variables in a Java .properties file.
+
+=Supported versions=
+
+See http://docs.automic.com/compatibility?len=Package.Java.Properties&comp=PCK.AUTOMIC_JAVA_PROPERTIES&version=1.1.0
 ]]></DOC>
 </DOCU_Docu>
 </DOCU>
