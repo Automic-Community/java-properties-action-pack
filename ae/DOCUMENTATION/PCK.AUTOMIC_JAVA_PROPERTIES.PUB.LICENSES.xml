@@ -11,11 +11,11 @@
 = Libraries =
 =================
 commons-discovery version 0.2 Apache 1.1 Copyright (C) 1999-2001 The Apache Software Foundation
-jax-rpc 1.0 CDDL 1.0 and Apache 2.0
+jax-rpc 1.0 Apache 2.0
 log4j version 2.0-rc1 Apache 2.0 Copyright (C) 2012 The Apache Software Foundation https://logging.apache.org/log4j/1.2/license.html
-logback-core 1.0.13 EPL 1.0 and LGPL 2.1
-logback-classic 1.0.13 EPL 1.0 and LGPL 2.1
-logback-access 1.0.13 EPL 1.0 and LGPL 2.1
+logback-core 1.0.13 EPL 1.0
+logback-classic 1.0.13 EPL 1.0 a
+logback-access 1.0.13 EPL 1.0
 wsdl4j 1.6.2 CPL 1.0 https://opensource.org/licenses/cpl1.0.php
 
 ==================
