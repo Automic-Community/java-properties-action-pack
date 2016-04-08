@@ -11,10 +11,6 @@ Create Already Exist
                       config.properties    newvariable    newvalue    0              ${ENDED_OK - ended normally}
 
 *** Keywords ***
-Suite Setup
-    Init AE And Package
-    Init File Server
-
 Update Already Exist Create Property Template
     [Arguments]    ${file}    ${property}    ${value}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_UPDATE_CREATE_PROPERTY}

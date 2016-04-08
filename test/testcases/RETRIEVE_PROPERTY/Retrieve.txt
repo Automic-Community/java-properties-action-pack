@@ -10,10 +10,6 @@ Resource          ../../resources/keywords.txt
 Retrieve              config.properties    newvariable    0              ${ENDED_OK - ended normally}
 
 *** Keywords ***
-Suite Setup
-    Init AE And Package
-    Init File Server
-
 Retrieve Property Template
     [Arguments]    ${file}    ${property}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_UPDATE_CREATE_PROPERTY}

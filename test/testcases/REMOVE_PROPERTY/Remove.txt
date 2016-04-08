@@ -9,10 +9,6 @@ Resource          ../../resources/keywords.txt
 Remove                config.properties    newvariable    0
 
 *** Keywords ***
-Suite Setup
-    Init AE And Package
-    Init File Server
-
 Remove Property Template
     [Arguments]    ${file}    ${property}    ${returnCode}
     Init Action    ${ACTION_UPDATE_CREATE_PROPERTY}

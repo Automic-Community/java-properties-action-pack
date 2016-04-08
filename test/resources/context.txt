@@ -32,8 +32,3 @@ Init File Server
     [Documentation]    Requirement
     Run Keyword If    '${OS}' == 'WIN'    Init Win Server
     Run Keyword If    '${OS}' == 'UNIX'    Init Unix Server
-
-Init Target Server
-    [Documentation]    Requirement
-    Run Keyword If    '${OS}' == 'WIN'    Init Win Server
-    Run Keyword If    '${OS}' == 'UNIX'    Init Unix Server

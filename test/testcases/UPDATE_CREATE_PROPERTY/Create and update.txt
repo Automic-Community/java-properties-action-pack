@@ -12,10 +12,6 @@ Create                config.properties    newvariable    newvalue       0      
 Update                config.properties    newvariable    updatevalue    0              ${ENDED_OK - ended normally}
 
 *** Keywords ***
-Suite Setup
-    Init AE And Package
-    Init File Server
-
 Update Create Property Template
     [Arguments]    ${file}    ${property}    ${value}    ${returnCode}    ${returnStatus}
     Init Action    ${ACTION_UPDATE_CREATE_PROPERTY}
