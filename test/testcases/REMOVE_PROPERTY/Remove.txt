@@ -6,7 +6,8 @@ Test Template     Remove Property Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    FILE                 PROPERTY       RETURN CODE
-Remove                config.properties    newvariable    0
+Remove                [Tags]               SMOKE_TEST
+                      config.properties    newvariable    0
 
 *** Keywords ***
 Remove Property Template
